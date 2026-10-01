@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="robots" content="noindex">
 <title>Un'Ottima Annata — enoteca con degustazione, da Udine a Potenza · Milano</title>
 <meta name="description" content="Un'Ottima Annata (oggi Bistrot66): enoteca con degustazione a conduzione femminile in Via Procaccini 66, Sempione, Milano. Una linea immaginaria da Udine a Potenza — vini, taglieri e prodotti artigianali di Friuli e Basilicata. Vini al calice e cucina d'autore. 4,4★." />
 <link rel="canonical" href="https://rotenzark.github.io/un-ottima-annata/" />
@@ -22,30 +23,80 @@
 <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
 <link rel="icon" href="img/favicon-32.png" sizes="32x32" type="image/png" />
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="fonts/fonts.css?v=1">
 <link rel="stylesheet" href="css/styles.css?v=1" />
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org", "@type": "Winery",
+  "@context": "https://schema.org",
+  "@type": "Winery",
   "name": "Un'Ottima Annata",
   "alternateName": "Bistrot66",
   "description": "Enoteca con degustazione a conduzione femminile a Milano, in Via Procaccini 66 (oggi Bistrot66): una linea immaginaria da Udine a Potenza, con vini, taglieri e prodotti artigianali di Friuli e Basilicata, vini al calice e cucina d'autore.",
   "url": "https://rotenzark.github.io/un-ottima-annata/",
-  "telephone": "+390261290595", "priceRange": "€€",
-  "servesCuisine": ["Enoteca", "Friulana", "Lucana", "Italiana"],
-  "image": "https://rotenzark.github.io/un-ottima-annata/img/wine-wall.jpg",
-  "address": { "@type": "PostalAddress", "streetAddress": "Via Giulio Cesare Procaccini 66", "addressLocality": "Milano", "postalCode": "20154", "addressCountry": "IT" },
-  "geo": { "@type": "GeoCoordinates", "latitude": 45.481353, "longitude": 9.166657 },
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.4", "reviewCount": "203" },
-  "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Tuesday","Wednesday","Thursday","Friday"], "opens": "12:00", "closes": "15:00" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "12:00", "closes": "15:30" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday"], "opens": "18:00", "closes": "00:00" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Friday","Saturday"], "opens": "18:00", "closes": "01:00" }
+  "telephone": "+390261290595",
+  "priceRange": "€€",
+  "servesCuisine": [
+    "Enoteca",
+    "Friulana",
+    "Lucana",
+    "Italiana"
   ],
-  "sameAs": ["https://bistrot66.it/", "https://www.facebook.com/enotecaunottimaannata/"]
+  "image": "https://rotenzark.github.io/un-ottima-annata/img/wine-wall.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Via Giulio Cesare Procaccini 66",
+    "addressLocality": "Milano",
+    "postalCode": "20154",
+    "addressCountry": "IT"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.481353,
+    "longitude": 9.166657
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "12:00",
+      "closes": "15:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "12:00",
+      "closes": "15:30"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday"
+      ],
+      "opens": "18:00",
+      "closes": "00:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Friday",
+        "Saturday"
+      ],
+      "opens": "18:00",
+      "closes": "01:00"
+    }
+  ],
+  "sameAs": [
+    "https://bistrot66.it/",
+    "https://www.facebook.com/enotecaunottimaannata/"
+  ]
 }
 </script>
 <script type="application/ld+json">
@@ -217,7 +268,7 @@
     </div>
     <div class="dove-side reveal">
       <figure class="dove-photo"><img src="img/facciata.jpg" alt="L'ingresso del locale in Via Procaccini (insegna Bistrot66)" width="960" height="1200" loading="lazy" /></figure>
-      <div class="dove-map"><iframe title="Mappa Un'Ottima Annata / Bistrot66" src="https://www.google.com/maps?q=Bistrot66+Via+Procaccini+66+Milano&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      <div class="dove-map"><div class="mappa-clic" data-mappa-clic style="--mappa-h: 320px"><template><iframe title="Mappa Un'Ottima Annata / Bistrot66" src="https://www.google.com/maps?q=Bistrot66+Via+Procaccini+66+Milano&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></template><div class="mappa-clic__velo"><a class="mappa-clic__btn" href="https://www.google.com/maps/dir/?api=1&destination=Bistrot66+Via+Procaccini+66+Milano" target="_blank" rel="noopener">Mostra la mappa</a><p class="mappa-clic__nota">La mappa è di Google: aprendola, Google riceve il tuo indirizzo IP e può usare i suoi cookie.</p></div></div></div>
     </div>
   </div>
 </section>
@@ -244,7 +295,7 @@
   </div>
   <div class="foot-bottom">
     <p data-i18n="foot.disclaimer">Sito dimostrativo. Contenuti e foto raccolti da fonti pubbliche (Google Maps); orari, piatti e prezzi sono indicativi, da confermare con il locale, che oggi opera anche come Bistrot66.</p>
-    <p class="foot-credit">Design <a href="https://bespokestud.io" target="_blank" rel="noopener">Bespoke Studio</a></p>
+    <p class="foot-credit">Design <a href="https://bespokestud.io" target="_blank" rel="noopener">Bespoke Studio</a> · <a href="privacy.html">Privacy</a></p>
   </div>
 </footer>
 
@@ -256,5 +307,6 @@
 
 <div id="lightbox" aria-hidden="true"><button id="lb-close" aria-label="Chiudi">✕</button><img id="lb-img" src="" alt="" /></div>
 <script src="js/main.js?v=1"></script>
+<script src="js/mappa-clic.js?v=1" defer></script>
 </body>
 </html>
